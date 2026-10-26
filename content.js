@@ -57,6 +57,8 @@ window.CONTENT = {
         "Holds insights about me that are hard for me to see on my own.",
         "Has a clear list of my strengths and weaknesses.",
         "Lays out a plan for working on my weaknesses.",
+        "Lists the things that help me ground myself and reconnect with my motivation.",
+        "Lists the habits that are good for me and that I should keep practicing.",
       ],
     },
   ],
