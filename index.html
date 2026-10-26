@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>No Smarter Than You</title>
+  <meta name="description" content="Goals, motivation and proof of what I've already done.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0b0710">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0710'/><text x='50' y='72' font-size='64' text-anchor='middle' fill='%23a970ff' font-family='Impact,sans-serif'>N</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <svg class="silk" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#7b3fc4"/>
+          <stop offset=".5" stop-color="#3a1466"/>
+          <stop offset="1" stop-color="#12051f"/>
+        </linearGradient>
+        <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#1a0730"/>
+          <stop offset=".55" stop-color="#6a2fb0"/>
+          <stop offset="1" stop-color="#22093d"/>
+        </linearGradient>
+        <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="14"/></filter>
+        <filter id="softer" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="3"/></filter>
+      </defs>
+      <g class="wave w1" filter="url(#soft)" opacity=".85">
+        <path fill="url(#g1)" d="M-100 120 C 300 -40 620 260 960 170 S 1400 40 1560 120 L1560 330 C 1260 260 1050 420 760 400 S 220 240 -100 380 Z"/>
+      </g>
+      <g class="wave w2" filter="url(#soft)" opacity=".7">
+        <path fill="url(#g2)" d="M-100 520 C 260 380 520 640 860 560 S 1300 360 1560 470 L1560 640 C 1240 560 1020 760 700 730 S 180 600 -100 720 Z"/>
+      </g>
+      <g class="wave w3" filter="url(#softer)" opacity=".5">
+        <path fill="none" stroke="#b07cff" stroke-width="2" d="M-100 330 C 260 200 560 470 900 380 S 1320 240 1560 300"/>
+        <path fill="none" stroke="#8a52e0" stroke-width="1.5" d="M-100 660 C 300 520 560 760 900 690 S 1300 520 1560 600"/>
+      </g>
+    </svg>
+    <div class="hero-inner">
+      <h1>No smarter<br>than you</h1>
+    </div>
+    <a class="scroll-cue" href="#goals" aria-label="Scroll to goals">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <main>
+    <section id="goals" class="section" aria-labelledby="goals-h">
+      <p class="eyebrow">In progress</p>
+      <h2 id="goals-h">Goals</h2>
+      <div id="goal-tiers"></div>
+    </section>
+
+    <section id="completed" class="section" aria-labelledby="completed-h">
+      <p class="eyebrow">Done</p>
+      <h2 id="completed-h">Completed goals</h2>
+      <div id="completed-tiers"></div>
+    </section>
+
+    <section id="motivation" class="section" aria-labelledby="motivation-h">
+      <p class="eyebrow">Fuel</p>
+      <h2 id="motivation-h">Motivation</h2>
+      <div id="motivation-rows" class="rows"></div>
+    </section>
+
+    <section id="quotes" class="section" aria-labelledby="quotes-h">
+      <h2 id="quotes-h" class="visually-hidden">More quotes</h2>
+      <ul id="quote-list" class="quote-wall"></ul>
+    </section>
+
+    <section id="achievements" class="section" aria-labelledby="achievements-h">
+      <p class="eyebrow">Already done</p>
+      <h2 id="achievements-h">Achievements</h2>
+      <p class="lede" id="achievements-lede"></p>
+      <ol id="achievement-list" class="achievements"></ol>
+    </section>
+  </main>
+
+  <footer class="footer">Keep going.</footer>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
