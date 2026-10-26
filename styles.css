@@ -157,7 +157,9 @@ h2 {
   display: block; height: 100%; border-radius: inherit;
   background: linear-gradient(90deg, var(--deep), var(--accent));
 }
-.bar.thin { height: 4px; }
+.bar.time { height: 6px; }
+.bar.time span { background: linear-gradient(90deg, var(--deep), var(--fill)); transition: width .6s ease; }
+.goal.overdue .bar.time span { background: var(--overdue); }
 .metric-row { display: flex; justify-content: space-between; font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
 .metric-row span:last-child { color: var(--text); font-weight: 600; }
 

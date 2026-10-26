@@ -113,7 +113,18 @@
               h(
                 "div",
                 { class: "timeline" },
-                h("div", { class: "bar thin", "aria-hidden": "true" }, h("span", { style: `width:${Math.round(elapsed * 100)}%` })),
+                h(
+                  "div",
+                  { class: "metric-row" },
+                  h("span", {}, "Time elapsed"),
+                  h("span", {}, `${Math.round(elapsed * 100)}%`)
+                ),
+                h(
+                  "div",
+                  { class: "bar time", role: "progressbar", "aria-label": "Time elapsed", "aria-valuenow": Math.round(elapsed * 100), "aria-valuemin": 0, "aria-valuemax": 100 },
+                  // Hue slides from purple (267) to green (142) as the period runs out.
+                  h("span", { style: `width:${Math.round(elapsed * 100)}%;--fill:hsl(${Math.round(267 - 125 * elapsed)} 75% 60%)` })
+                ),
                 h(
                   "div",
                   { class: "dates" },
